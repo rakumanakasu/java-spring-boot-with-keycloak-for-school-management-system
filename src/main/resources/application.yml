@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8067/realms/su79-school-management-realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+  server:
+    port: 8081 # Your application port
+  jwt:
+    auth:
+      converter:
+        resource-id: school-management-client
+        principle-attributes: preferred_username
