@@ -1,3 +1,5 @@
+This showcases the School Management System I developed as part of my exam project.
+The system is built using Java Spring Boot for the backend, Keycloak for secure authentication and role-based access control, and Flutter for the mobile application
 A secure REST API built with Spring Boot using Keycloak for authentication and role-based authorization.
 The application uses JWT tokens, custom Role Mappers, User Management, and supports integration with frontend frameworks such as Flutter, React, and Next.js.
 
